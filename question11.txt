@@ -1,0 +1,20 @@
+﻿How does nesting the <a> tag inside the <p> tag affect the display of the text?
+
+
+    The text within the <a> tag will be styled as a hyperlink (typically underlined and colored blue by default)
+  
+  Example : <p>This is a paragraph with an <a href="https://example.com">inline link</a> inside it.</p>
+
+
+
+
+
+
+What happens if you move the <a> tag outside the <p> tag?
+
+
+     This allows the entire paragraph to function as a clickable link.
+
+
+   Example : <a href="https:example.com"> <p>This entire paragraph is a clickable link.</p>
+</a>

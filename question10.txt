@@ -1,0 +1,11 @@
+﻿How does the placement of the <img> tag affect the layout of the page?
+
+
+      The placement of the <img> tag in HTML affects the layout of the page depending on how the image is positioned relative to other elements
+
+
+What happens if you move the image before the paragraph?
+
+
+      The image appears first.
+      The text follows below the image.
