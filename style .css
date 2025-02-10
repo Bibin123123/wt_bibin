@@ -1,0 +1,40 @@
+body{
+    background-color:black;
+}
+
+h1{
+    
+    color:white;
+    border-bottom:5px solid white;
+    
+}
+.div1{
+    background-color:red;
+    color:white;
+    font-style:italic;
+    font-size:20px;
+    border:2px solid green;
+}
+.div2{
+    background-color:blue;
+    color:white;
+    font-style:oblique;
+    font-size:20px;
+    border:2px solid orange;
+}
+.div3{
+    background-color:green;
+    color:white;
+    font-style:oblique;
+    font-size:20px;
+    border:2px solid yellow;
+}
+.div4
+{
+   background-color:orange;
+    color:white;
+    font-style:italic;
+    font-size:20px;
+    border:2px solid blue;
+    
+}
