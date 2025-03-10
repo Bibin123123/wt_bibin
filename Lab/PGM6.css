@@ -1,0 +1,16 @@
+table,th,td{
+    border: 3px solid white;
+}
+table{
+    background-color:#4e80ff;
+    border-collapse:collapse;
+    
+}
+td{
+    text-align: center;
+    height:;
+}
+tr:nth-child(odd){
+    background-color:#97a1ff;
+    
+}

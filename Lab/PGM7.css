@@ -1,0 +1,62 @@
+body{
+    background-color:#f0f0f0 ;
+}
+
+#l1:link{
+    text-decoration:none;
+    color:#5dd1f5;
+    background-color: white;
+    font-weight:bold;
+    
+    
+}
+#l1:hover{
+    text-decoration:none;
+    color: #5dd1f5 ;
+    background-color:#a8f6ff ;
+    font-weight:bold;
+}
+#l1:active{
+    text-decoration:underline;
+    color: #5dd1f5 ;
+    background-color:#a8f6ff ;
+    font-weight:bold;
+    
+}
+#about{
+    font-style:Georgia ;
+    text-align:justify;
+}
+#courses{
+    font-family:Tahoma ;
+    
+}
+#l2:link{
+    text-decoration:none;
+    color:black;
+    background-color: white;
+    font-weight:bold;
+    
+    
+}
+#l2:hover{
+    text-decoration:none;
+    color: #5dd1f5 ;
+    background-color:#a8f6ff ;
+    font-weight:bold;
+}
+#l2:active{
+    text-decoration:underline;
+    color: #5dd1f5 ;
+    background-color:#a8f6ff ;
+    font-weight:bold;
+}
+#departments{
+    font-family: Tahoma;
+    
+}
+#library{
+    font-family:Georgia;
+    text-align: justify;
+}
+    
