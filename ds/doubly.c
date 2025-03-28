@@ -8,6 +8,7 @@ struct node{
 
 	int data;
 	struct node *next;
+	struct node *prev;
 
 };
 
@@ -26,6 +27,7 @@ void inseartAtBeg( )
 	printf("Enter a number:");
 	scanf("%d",&newnode->data);
 	newnode->next=0;
+	newnode->prev=0;
 	if(head==0)
 	{
 		head=temp=newnode;
@@ -45,6 +47,7 @@ void inseartatend()
         printf("Enter a number:");
         scanf("%d",&newnode->data);
         newnode->next=0;
+	newnode->prev=0;
         if(head==0)
         {
                 head=temp=newnode;
@@ -59,6 +62,7 @@ void inseartatend()
 			temp=temp->next;
 		}
 		temp->next=newnode;
+		newnode->prev=temp;
         }
 
 
@@ -89,7 +93,9 @@ void inseartatspecific()
 			i++;
 		}
 		newnode->next=temp->next;
+		temp->next->prev=newnode;
 		temp->next=newnode;
+		newnode->prev=temp;
         }
 
 
@@ -110,11 +116,8 @@ void DeleteAtBeg()
 {
         temp=head;
 	head=temp->next;
+	head->prev=0;
 	free(temp);
-
-
-
-
 
 
 }
@@ -147,6 +150,7 @@ void DeleteAtSpecific()
                 i++;
        }
        prevnode->next=temp->next;
+       temp->next->prev=prevnode;
        free(temp);
 
 
@@ -157,7 +161,7 @@ int main()
   	int ch;
         do
         {
-                printf("1 for insert at beg\n2for insert at end\n3 for insert at specific position\n4 for Delete from beginning\n5delete from end\n6 for delete from specific position\n7 for display\n");
+                printf("1 for insert at beg\n2for insert at end\n3 for insert at specific position\n4 for Delete from beginning\n5 for delete from end\n6 for delete from specific position\n7 for display\n8 for Exit\n");
                 scanf("%d",&ch);
                 switch(ch)
                 {
@@ -194,5 +198,4 @@ int main()
         }while(ch!=8);
         return 0;
 }
-
 
