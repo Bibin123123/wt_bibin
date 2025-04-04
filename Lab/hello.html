@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>date</title>
+</head>
+<body>
+
+
+<input type="button" value="load date" onclick="loadDate()">
+<p>Date<span id="date"></span> </p>
+<script>
+	console.log("hi");
+	function loadDate(){
+
+	let xhr=new XMLHttpRequest();
+	xhr.open("GET",	"date.txt",true);
+
+	xhr.onload=function(){
+		if(xhr.status===200){
+			document.getElementById("date").innerText=xhr.responseText;
+			}		
+
+		};
+		xhr.send();
+
+	}
+</script>
+
+</body>
+
+</html>
