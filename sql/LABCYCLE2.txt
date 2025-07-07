@@ -1,0 +1,45 @@
+LAB CYCLE 2
+
+Consider the following Schema  
+Supplier(SID, Sname, branch, city, phone)  
+Part(PID, Pname, color, price)  
+Supplies(SID, PID, qty, date_supplied)   
+
+1. Create Supplier table with Primary Key Constraint  
+2. Create Supplies table with Foreign key Constraint  
+3. Create Part table with UNIQUE and NOT NULL Constraint for Pname
+4. Create Part Table with Check Constraints for color with values only ‘red’ or ‘green’
+5. Create Supplier table with Default Constraint for branch as ‘local’
+
+Queries using aggregate Functions:  
+
+1. Find the minimum, maximum, average and sum of costs of parts  
+2. Count the total number of parts present   
+3. Retrieve the average cost of all parts supplied by ‘Mike’  
+
+Queries on GROUP BY, HAVING, and ORDER BY Clauses:
+  
+1. Display the total price of parts of each color  
+2. Find the branch and the number of suppliers in that branch for branches that have more than 2 suppliers  
+3. Find all parts sorted by pname in ascending order and cost in descending order  
+4. Find the branch and the number of suppliers in that branch
+
+Queries on Operators  
+
+1. Find the pname, phoneno and cost of parts which have cost equal to or greater than 200 and 
+less than  or equal to 600.   
+2. Find the sname , SID and branch of suppliers who are in ‘local’ branch or ‘global’ branch  
+3. Find the pname, phoneno and cost of parts for which cost is between 200 and 600  
+4. Find the pname and color of parts , which has the word ‘NET’ anywhere in its pname.  
+5. Find the PID and pname of parts with pname either ‘NUT’ or ‘BOLT’  
+6. List the suppliers who supplied parts on ‘1st may2000’, ‘12 JAN 2021’ ,’17 dec 2000’ ,’10 Jan 2021’  
+7. Find all the distinct costs of parts  
+
+Queries on Set Theory Operators  
+
+1. List all parts except ‘NUT’ and ‘BOLT’ in ascending order of costs  
+2. Display all parts that have not been supplied so far  
+3. To display the supplier names who have supplied ‘green’ part with cost 500 Rupees AND 
+‘red’ part with cost 400 Rupees.     
+4. To Display the name of suppliers who have supplied all parts that are ‘red’ in color.  
+
